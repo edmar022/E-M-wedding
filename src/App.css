@@ -1,0 +1,269 @@
+p{
+  font-family: "Overlock", cursive;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Use dynamic viewport height */
+  }
+  
+  .couple-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  .topnav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    font-family: "Overlock", cursive;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.8);
+  }
+  .topnav .nav-link {
+    color: white !important; /* !important to override Bootstrap defaults */
+  }
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .image-wrapper {
+    position: relative;
+    display: inline-block; /* Or block if you want full width */
+  }
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* or any color that contrasts with the image */
+    
+    text-shadow: 0px 2px 4px rgba(0,0,0,1); /* optional for better contrast */
+    
+  }
+.center-text-main{
+  font-size: 3rem; /* adjust as needed */
+  font-weight: bold;
+  font-family: "MonteCarlo", cursive;
+}
+.centered-text-sub{
+  font-size: 1.5rem;
+  font-family: "Overlock", cursive;
+  font-weight: bold;
+}
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      rgba(72, 163, 108, 0.1)
+, /* Yellow gold with transparency */
+    rgba(0, 0, 0, 0.2) /* Black fade for cinematic effect */
+  );
+    z-index: 1;
+  }
+  .countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 33vh;
+    
+    
+  }
+  .countdown {
+    display: flex;
+    gap: 1rem;
+  }
+  .time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .label{
+    font-size: 0.8rem;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  
+
+
+  .divider {
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers content horizontally */
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(to right, #d4af37, transparent, #d4af37);
+    border-radius: 2px;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1; /* Makes the lines flexible */
+    height: 2px;
+    background-color: #d4af37;
+  }
+  
+  .divider span {
+    padding: 0 15px;
+    font-size: 24px;
+    color: #d4af37; /* Gold */
+  }
+
+  .divider-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, #d4af37, transparent, #d4af37);
+    border-radius: 2px;
+    margin: 20px auto;
+    position: relative;
+    border-bottom: 3px solid #ffffff; /* White line */
+  }
+  .divider-main::before {
+    left: -35px;
+    top: -5px; /* Moves slightly above the line */
+  }
+  
+  .divider-main::after {
+    right: -35px;
+    top: -5px;
+  }
+  
+  .divider-main span {
+    position: absolute;
+    font-size: 20px; /* Adjust size of the heart */
+    color: #ffffff; /* Gold heart */
+  }
+  
+  .story {
+    font-family: "MonteCarlo", cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+
+  .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.gallery-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  max-width: 80vw;
+  max-height: 75vh;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #222 !important; /* or #000 for pure black */
+  font-size: 30px;         /* optional: resize arrow */
+}
+
+.slide-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px; /* or desired fixed height */
+  width: 100%;
+}
+
+.gallery-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.footer {
+  background-color: rgba(46, 75, 46, 0.4);
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.8);
+  position: relative;
+  height: 200px;
+}
