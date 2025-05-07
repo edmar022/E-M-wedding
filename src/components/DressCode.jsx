@@ -21,7 +21,7 @@ const DressCode = () => {
                 <div className="col-12 d-flex align-items-center justify-content-center">
                 <p className=' text-center fs-6'>
                     <b>Ninong</b><br/>
-                    Traditionan Barong  <br/>
+                    Traditional Barong  <br/>
                     Tagalog and Black Pants
                 </p>
                 </div>

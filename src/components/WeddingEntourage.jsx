@@ -45,7 +45,7 @@ const WeddingEntourage = () => {
 
       <div className='d-flex justify-content-center '>
         <img
-          src={entourage2}
+          src={entourage3}
           alt="entourage3"
           className="img-fluid rounded gallery-img shadow p-3 mb-5 bg-white rounded"
           style={{ maxWidth: '40%',minWidth:'300px', height: 'auto', cursor: 'pointer' }}
